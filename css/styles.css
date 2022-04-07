@@ -1,0 +1,607 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.wrapper {
+  margin: 0 auto;
+}
+.header {
+  color: white;
+}
+.menu__btn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: "";
+  top: 16px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.hamburger-menu {
+  position: relative;
+}
+.menu__item {
+  text-decoration: none;
+  color: #616161;
+  font-size: 0.8em;
+  left: 30px;
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.image {
+  background-image: url(../img/1.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.email_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.email_wrapper input {
+  border: none;
+  width: 60%;
+  font-size: 0.5em;
+  padding: 1em 5px;
+  margin: 0;
+}
+.email_wrapper .button {
+  border: none;
+  border-radius: 2px;
+  padding: 1em 1.2em;
+}
+.image h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #7b7b7b;
+}
+.title {
+  margin-top: 20px;
+  width: 60%;
+  font-size: 0.8em;
+  margin-bottom: 35px;
+  color: #7b7b7b;
+  /*background-color: hsla(0, 9%, 98%, 0.326);*/
+}
+.services {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.service {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 10px solid rgb(248, 162, 4);
+}
+.container_service {
+  padding: 0 10px;
+  background-color: white;
+}
+.service h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+.service .information {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.deals {
+  padding: 20px;
+}
+.agency h2 {
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+.fhoto {
+  margin-top: 10px;
+}
+.fhoto img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.sales {
+  margin-top: 10px;
+  text-align: justify;
+}
+.sale50,
+.sale99 {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 10px auto;
+}
+.sale50 h1,
+.sale99 h1 {
+  color: rgb(248, 162, 4);
+  font-size: 3em;
+}
+.our-services {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.our-services h4 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.our-services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.it_services {
+  background-color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+.it_services img {
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.it_services h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.it_services .text {
+  font-size: 16px;
+  color: #7b7b7b;
+  margin-bottom: 20px;
+}
+.it_service {
+  border-bottom: 10px solid rgb(248, 162, 4);
+}
+.investing {
+  padding: 20px;
+}
+.investing_in_parks {
+  margin: 20px 0;
+}
+.text_investing {
+  margin-top: 20px;
+  line-height: 1.2em;
+}
+.fhoto_investing img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+.result {
+  padding: 40px auto;
+  text-align: center;
+  width: 60%;
+}
+.result:nth-child(2),
+.result:nth-child(3) {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.result h1 {
+  color: rgb(248, 162, 4);
+  font-size: 4em;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.result p {
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  color: #7b7b7b;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+}
+.result:nth-child(3) {
+  order: 1;
+}
+.staff {
+  padding: 20px;
+}
+.cars_staff {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+.cars_staff h5 {
+  color: rgb(248, 162, 4);
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+.cars_staff h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.cars_staff p {
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+.socials {
+  color: rgb(248, 162, 4);
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+.circle {
+  position: relative;
+  top: -50px;
+}
+.circle img {
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
+.about_us {
+  padding: 0 20px;
+}
+.about h5 {
+  color: #7b7b7b;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-size: 0.9em;
+  letter-spacing: 1.2px;
+}
+.about h2 {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  line-height: 1.2em;
+  padding-bottom: 15px;
+}
+.about p {
+  padding-bottom: 15px;
+}
+.about ul {
+  padding-bottom: 20px;
+  margin-left: 20px;
+  list-style-type: square;
+}
+.about li {
+  color: rgb(248, 162, 4);
+}
+.fhoto_about img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.but {
+  margin-bottom: 20px;
+}
+.button {
+  text-decoration: none;
+  padding: 0.7em 2em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #58a linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
+  border-radius: 1.5em;
+  box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 -0.05em 0.05em (0, 0, 0, 1);
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 0.5em;
+  background-color: rgb(248, 162, 4);
+  cursor: pointer;
+}
+
+.pricing_plan {
+  padding: 30px 20px;
+}
+.plan h4 {
+  text-align: center;
+  color: #7b7b7b;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding-bottom: 15px;
+}
+.plan h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.small_plan {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.first,
+.second,
+.third {
+  display: flex;
+  box-shadow: 3px 3px 7px 0.2px #c5c4c4;
+  border-radius: 2px;
+  gap: 60px;
+  padding: 20px 40px;
+  border-bottom: 10px solid rgb(248, 162, 4);
+}
+.left_side {
+  text-align: center;
+}
+.small_plan h1 {
+  color: rgb(248, 162, 4);
+  font-weight: bold;
+  font-size: 3em;
+  padding-bottom: 10px;
+}
+.right_side ul {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.right_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.first .button,
+.third .button {
+  background-color: rgb(248, 188, 110);
+  color: rgb(176, 115, 1);
+}
+.contact {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.help h5 {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding-bottom: 10px;
+}
+.help h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+.help p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+.help ul {
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+.phone {
+  color: rgb(248, 162, 4);
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: -15px;
+}
+.contact_us h5 {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+.contact_us h3 {
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  padding-bottom: 20px;
+}
+.message {
+  background-color: white;
+  border-radius: 20px;
+  height: 210px;
+  padding: 15px 20px;
+}
+footer {
+  height: 80px;
+  text-align: center;
+  font-size: 0.5em;
+  background-color: rgb(44, 43, 43);
+  color: white;
+  padding: 20px;
+  letter-spacing: 1.1px;
+}
+label {
+  font-size: 12px;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px;
+  color: #7b7b7b;
+}
+textarea {
+  height: 80px;
+}
+#E-mail {
+  width: 60%;
+}
+@media screen and (min-width: 481px) {
+  .container_service {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu__btn {
+    display: none;
+  }
+  .menu__item {
+    display: flex;
+  }
+  .service {
+    width: 50%;
+    gap: 10px;
+  }
+  .sale {
+    display: flex;
+  }
+  .sale50,
+  .sale99 {
+    width: 48%;
+  }
+  .it_services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .it_service {
+    width: 45%;
+  }
+  .results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .result {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .wrapper {
+    max-width: 1280px;
+  }
+  .container_service {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service {
+    width: 23%;
+  }
+  .service h4 {
+    padding-top: 20px;
+  }
+  .deals {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .agency,
+  .procent {
+    width: 48%;
+  }
+  .procent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .it_service {
+    width: 30%;
+  }
+  .investing {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+  }
+  .investing_in_parks h2 {
+    font-size: 2em;
+  }
+  .investing_in_parks {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .fhoto_investing {
+    width: 100%;
+  }
+  .results {
+    flex-wrap: wrap;
+
+    flex-direction: row;
+  }
+  .result,
+  .result:nth-child(2),
+  .result:nth-child(3) {
+    width: 48%;
+  }
+  .staff {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cars_staff {
+    width: 30%;
+  }
+  .about_us {
+    display: flex;
+    gap: 10px;
+  }
+  .about h2 {
+    font-size: 1.5em;
+  }
+  .fhoto_about {
+    width: 100%;
+  }
+  .small_plan {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+  .our-services {
+    padding: 30px;
+  }
+  .our-services h4 {
+    padding-top: 30px;
+  }
+  .our-services h2 {
+    padding-bottom: 30px;
+  }
+  .first,
+  .second,
+  .third {
+    flex-direction: column;
+    padding: 20px 60px;
+  }
+  .plan {
+    margin: 20px auto;
+  }
+  .plan h2 {
+    font-size: 2em;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+  }
+  .help,
+  .contact_us {
+    width: 48%;
+  }
+  .contact_us h3 {
+    margin-top: 15px;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+}
